@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EventAlbumApp/1.0.0": {
+        "runtime": {
+          "EventAlbumApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventAlbumApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

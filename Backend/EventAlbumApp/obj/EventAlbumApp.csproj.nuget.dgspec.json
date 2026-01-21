@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkbor\\Desktop\\na ślub\\evaentapp\\EventAlbumApp\\EventAlbumApp\\EventAlbumApp.csproj": {}
+    "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\EventAlbumApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkbor\\Desktop\\na ślub\\evaentapp\\EventAlbumApp\\EventAlbumApp\\EventAlbumApp.csproj": {
+    "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\EventAlbumApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkbor\\Desktop\\na ślub\\evaentapp\\EventAlbumApp\\EventAlbumApp\\EventAlbumApp.csproj",
+        "projectUniqueName": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\EventAlbumApp.csproj",
         "projectName": "EventAlbumApp",
-        "projectPath": "C:\\Users\\kkbor\\Desktop\\na ślub\\evaentapp\\EventAlbumApp\\EventAlbumApp\\EventAlbumApp.csproj",
+        "projectPath": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\EventAlbumApp.csproj",
         "packagesPath": "C:\\Users\\kkbor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkbor\\Desktop\\na ślub\\evaentapp\\EventAlbumApp\\EventAlbumApp\\obj\\",
+        "outputPath": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.23, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

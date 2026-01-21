@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventAlbumApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddb3be4aa872ba35116b5ede8037f2a48ff4a310")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventAlbumApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventAlbumApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

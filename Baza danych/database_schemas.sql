@@ -1,0 +1,57 @@
+--1.Creating database if not exist
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'EventAlbumDB')
+BEGIN
+    CREATE DATABASE EventAlbumDB;
+END 
+GO 
+
+--2.przełączenie się na nowo utworzoną baze
+USE EventAlbumDB;
+GO 
+
+--3.Tworzenie tabel
+--3.1 Tabela użytkownika
+CREATE TABLE Users(
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    names NVARCHAR(100) NOT NULL,
+    surname NVARCHAR(100) NOT NULL,
+    email NVARCHAR (100) UNIQUE NOT NULL,
+    password_hash NVARCHAR (MAX) NOT NULL,
+    created_at DATETIME2 DEFAULT GETDATE() 
+);
+GO
+CREATE TABLE Qr(
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Token UNIQUEIDENTIFIER NOT NULL UNIQUE,
+    CreatedAt DATETIME2 DEFAULT SYSDATETIME()
+);
+GO
+CREATE TABLE Album(
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    idUser UNIQUEIDENTIFIER NOT NULL,
+    idQr UNIQUEIDENTIFIER NOT NULL,
+    names NVARCHAR(100) NOT NULL,
+    startEvent DATETIME2,
+    endEvent DATETIME2,
+    created_at DATETIME2 DEFAULT GETDATE(),
+    
+    CONSTRAINT FK_Album_Qr FOREIGN KEY (idQr)
+        REFERENCES Qr(id)
+        ON DELETE CASCADE,
+    CONSTRAINT FK_Album_User FOREIGN KEY (idUser) 
+        REFERENCES Users(id) 
+        ON DELETE CASCADE
+);
+GO
+CREATE TABLE Photos(
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    idAlbum UNIQUEIDENTIFIER NOT NULL,
+    names NVARCHAR(255),
+    datas VARBINARY(MAX),
+    uploaded_at DATETIME2 DEFAULT SYSDATETIME(),
+    
+    CONSTRAINT FK_Photos_Album FOREIGN KEY (idAlbum)
+        REFERENCES Album(id)
+        ON DELETE CASCADE
+);
+GO

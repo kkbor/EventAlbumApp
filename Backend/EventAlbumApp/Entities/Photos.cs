@@ -20,7 +20,7 @@ namespace EventAlbumApp.Entities
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
-        [ForeignKey("idAlbum")]
+        [ForeignKey(nameof(IdAlbum))]
         public Album? Album { get; set; }
     }
 }

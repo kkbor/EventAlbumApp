@@ -23,9 +23,9 @@ namespace EventAlbumApp.Entities
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
-        [ForeignKey("idUser")]
+        [ForeignKey(nameof(IdUser))]
         public Users? Users { get; set; }
-        [ForeignKey("idQr")]
+        [ForeignKey(nameof(IdQr))]
         public Qr? Qr { get; set; }
         
         public ICollection<Photos>? Photos { get; set; }

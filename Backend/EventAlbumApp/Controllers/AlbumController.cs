@@ -18,6 +18,11 @@ namespace EventAlbumApp.Controllers
         {
             _context = context;
         }
+        /// <summary>
+        /// a function that create a new user album, and also qr code with token to this album
+        /// </summary>
+        /// <param name="dto"> accepts at the starts class album(user id, name, start, end)</param>
+        /// <returns>information abaout album</returns>
         [HttpPost("create")]
         public async Task<IActionResult> CreateAlbum(DTOalbum dto)
         {
@@ -62,6 +67,11 @@ namespace EventAlbumApp.Controllers
                 QrRedirectUrl = qrUrl
             }, "Album utworzony pomyślnie"));
         }
+        /// <summary>
+        /// find album base on qr url
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         [HttpGet("by-qr/{token:guid}")]
         public async Task<IActionResult> GetAlbumByQr(Guid token)
         {

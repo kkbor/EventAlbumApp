@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  max-width: 1920px;
+  text-align: center;
+}
+
+.home-page {
+  background-color: #C6CC70;
+  background-image: url("../src/assets/grapes-1659118_1920.jpg");
+  background-size: center;      
+  background-position: center 85px; 
+  background-repeat: no-repeat;
+  min-height: 100vh;          
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;                 
+  margin: 0;                  
+}
+.top-buttons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
+}
+.btn {
+  background-color: #3D1D3A; 
+  color: white;
+  border: 2px solid #3D1D3A;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: 0;  
+  border-bottom-left-radius: 0; 
+  border-top-right-radius: 10px;    
+  border-bottom-right-radius: 10px;
+  margin-right: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn1 {
+  background-color: transparent; 
+  color: Black;
+   border: 2px solid #3D1D3A;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: 10px;  
+  border-bottom-left-radius: 10px; 
+  border-top-right-radius: 0;    
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #000000;
+}
+.btn1:hover {
+  background-color: #000000;
+}
+.bar-home{
+  background-color: #F8F1DE;
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Italianno';
+  font-size: 96px;
+}
+.block {
+  background-color: #FFFAEE;
+  width: calc(100% - 100px);   
+  height: calc(100vh - 100px); 
+  margin: 50px;               
+  border: 2px solid #634161;
+  border-radius: 120px;
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  font-family: 'Georgia';
+  padding: 2rem;               
+  box-sizing: border-box;      
+}

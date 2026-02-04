@@ -1,0 +1,86 @@
+
+.login-page {
+  background-image: url("../assets/grapes-1659118_1920.jpg");
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;         
+  width: 100%;               
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  max-width: 1920px;
+  text-align: center;
+}
+.block-login {
+  background-color: #FFFAEE;
+  width: 500px;   
+  height: 649px; 
+  border: 2px solid #634161;
+  border-radius: 120px;
+  display: flex;      
+  flex-direction: column;     /* dzieci w kolumnie */
+  align-items: center;        /* wyśrodkowanie poziome */
+  font-family: 'Italianno';
+  font-size: 96px;           
+  padding: 2rem;               
+  box-sizing: border-box;      
+  gap: 20px;                  /* odstęp między dziećmi */
+}
+
+
+.data {
+  background-color: white;
+  width: 400px;
+  height: 50px;
+  font-family: 'Georgia';
+  color: #7A7A7A;
+  font-size: 24px;           /* mniejszy font, żeby pasowało */
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;       /* pionowe wyśrodkowanie tekstu w polu */
+  border-radius: 10px;
+}
+.btn-login {
+  background-color: #3D1D3A; 
+  width: 430px;
+  height: 50px;
+  color: white;
+  border: 2px solid #3D1D3A;
+  font-family: 'Georgia';
+  padding: 0 1rem;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-google {
+  background-color: white; 
+  width: 430px;
+  height: 50px;
+  color: black;
+  border: 2px solid #3D1D3A;
+  font-family: 'Georgia';
+  padding: 0 1rem;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.google-icon {
+  width: 24px;        /* rozmiar ikony */
+  height: 24px;
+  margin-right: 10px; /* odstęp między ikoną a tekstem */
+  vertical-align: middle; /* wyrównanie do środka przycisku */
+}

@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\dto\\response\\albumresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\dto\\response\\albumresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\dto\\dtoalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\dto\\dtoalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\entities\\photos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +39,12 @@
       "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\entities\\qr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\dto\\dtoalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\dto\\dtoalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\dto\\dtoregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\dto\\dtoregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\controllers\\qrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\controllers\\qrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|solutionrelative:eventalbumapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC2C7A8C-CF30-404C-9A64-71369B41934A}|EventAlbumApp\\EventAlbumApp.csproj|c:\\users\\kkbor\\desktop\\nowy folder (3)\\eventalbumapp\\backend\\eventalbumapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,44 +98,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AlbumController.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\AlbumController.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Controllers\\AlbumController.cs",
               "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\AlbumController.cs",
               "RelativeToolTip": "EventAlbumApp\\Controllers\\AlbumController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAvwGAAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T19:35:01.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T19:35:01.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QRController.cs",
-              "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\QRController.cs",
-              "RelativeDocumentMoniker": "EventAlbumApp\\Controllers\\QRController.cs",
-              "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\QRController.cs",
-              "RelativeToolTip": "EventAlbumApp\\Controllers\\QRController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T19:25:07.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Controllers\\UserController.cs",
               "RelativeToolTip": "EventAlbumApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwD0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T10:50:34.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DTOLogin.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\DTO\\DTOLogin.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\DTO\\DTOLogin.cs",
@@ -147,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DTOregister.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\DTO\\DTOregister.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\DTO\\DTOregister.cs",
@@ -170,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Qr.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Entities\\Qr.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Entities\\Qr.cs",
@@ -178,12 +165,11 @@
               "RelativeToolTip": "EventAlbumApp\\Entities\\Qr.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:21:59.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:21:59.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Photos.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Entities\\Photos.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Entities\\Photos.cs",
@@ -191,12 +177,11 @@
               "RelativeToolTip": "EventAlbumApp\\Entities\\Photos.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIA2wBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:14:18.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:14:18.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Entities\\Users.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Entities\\Users.cs",
@@ -204,12 +189,11 @@
               "RelativeToolTip": "EventAlbumApp\\Entities\\Users.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T11:34:10.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T11:34:10.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Album.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Entities\\Album.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\Entities\\Album.cs",
@@ -217,12 +201,36 @@
               "RelativeToolTip": "EventAlbumApp\\Entities\\Album.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwBsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T19:41:58.682Z",
+              "WhenOpened": "2026-01-25T19:41:58.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Program.cs",
+              "RelativeDocumentMoniker": "EventAlbumApp\\Program.cs",
+              "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Program.cs",
+              "RelativeToolTip": "EventAlbumApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:25:16.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "AlbumResponse.cs",
+              "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\DTO\\Response\\AlbumResponse.cs",
+              "RelativeDocumentMoniker": "EventAlbumApp\\DTO\\Response\\AlbumResponse.cs",
+              "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\DTO\\Response\\AlbumResponse.cs",
+              "RelativeToolTip": "EventAlbumApp\\DTO\\Response\\AlbumResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T20:47:47.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DTOalbum.cs",
               "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\DTO\\DTOalbum.cs",
               "RelativeDocumentMoniker": "EventAlbumApp\\DTO\\DTOalbum.cs",
@@ -267,18 +275,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T12:32:57.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Program.cs",
-              "RelativeDocumentMoniker": "EventAlbumApp\\Program.cs",
-              "ToolTip": "C:\\Users\\kkbor\\Desktop\\Nowy folder (3)\\EventAlbumApp\\Backend\\EventAlbumApp\\Program.cs",
-              "RelativeToolTip": "EventAlbumApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T10:25:16.193Z"
             },
             {
               "$type": "Document",

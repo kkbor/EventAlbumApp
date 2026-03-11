@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "EventAlbumApp.Controllers.AlbumController",
+    "Method": "GetActiveAlbumsByUser",
+    "RelativePath": "api/Album/active/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventAlbumApp.Controllers.AlbumController",
     "Method": "GetAlbumByQr",
     "RelativePath": "api/Album/by-qr/{token}",
     "HttpMethod": "GET",
@@ -26,6 +42,22 @@
       {
         "Name": "dto",
         "Type": "EventAlbumApp.DTO.DTOalbum",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventAlbumApp.Controllers.AlbumController",
+    "Method": "GetEndedAlbumsByUser",
+    "RelativePath": "api/Album/ended/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

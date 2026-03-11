@@ -1,0 +1,54 @@
+.home-page {
+  background-color: #C6CC70;
+  background-image: url("../../assets/grapes-1659118_1920.jpg");
+  background-position: center 85px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.top-buttons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.btn {
+  background-color: #3D1D3A;
+  color: white;
+  border: 2px solid #3D1D3A;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: 2px solid #3D1D3A;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.bar-home{
+  background-color: #F8F1DE;
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Italianno';
+  font-size: 96px;
+}
+
+.block {
+  background-color: #FFFAEE;
+  width: calc(100% - 100px);
+  height: calc(100vh - 100px);
+  margin: 50px;
+  border: 2px solid #634161;
+  border-radius: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

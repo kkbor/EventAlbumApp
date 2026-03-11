@@ -1,8 +1,7 @@
-import '../index.css'
-import google from '../assets/google.png'
-import '../style/Login.css'
+import google from '../../assets/google.png'
+import './login.css'
 import { useNavigate } from "react-router-dom";
-import { api } from '../apiConnection/Connection';
+import { api } from '../../features/auth/apiConnection/Connection';
 import { useState } from 'react';
 function Register() {
      const navigate = useNavigate();

@@ -1,11 +1,6 @@
-﻿using BCrypt.Net;
-using EventAlbumApp.Connetion;
-using EventAlbumApp.DTO;
-using EventAlbumApp.DTO.Response;
-using EventAlbumApp.Entities;
+﻿using EventAlbumApp.DTO;
 using EventAlbumApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace EventAlbumApp.Controllers
 {
@@ -32,6 +27,7 @@ namespace EventAlbumApp.Controllers
         public async Task<IActionResult> Login(DTOLogin dto)
         {
             var response = await _userService.LoginAsync(dto);
+
             return response.Success ? Ok(response) : Unauthorized(response);
         }
     }

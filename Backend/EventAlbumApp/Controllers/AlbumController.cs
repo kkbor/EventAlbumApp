@@ -3,13 +3,16 @@ using EventAlbumApp.DTO;
 using EventAlbumApp.DTO.Response;
 using EventAlbumApp.Entities;
 using EventAlbumApp.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using QRCoder;
 using System.Drawing.Imaging;
+using System.Security.Claims;
 
 namespace EventAlbumApp.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class AlbumController : ControllerBase
@@ -24,11 +27,19 @@ namespace EventAlbumApp.Controllers
         /// </summary>
         /// <param name="dto"> accepts at the starts class album(user id, name, start, end)</param>
         /// <returns>information abaout album</returns>
+        [Authorize]
         [HttpPost("create")]
         public async Task<IActionResult> CreateAlbum(DTOalbum dto)
         {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Brak userId w tokenie");
+
+            var userId = Guid.Parse(userIdClaim.Value);
+
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
-            var response = await _albumService.CreateAlbumAsync(dto, baseUrl);
+            var response = await _albumService.CreateAlbumAsync(dto, baseUrl, userId);
             return response.Success ? Ok(response) : BadRequest(response);
         }
         /// <summary>
@@ -50,15 +61,29 @@ namespace EventAlbumApp.Controllers
        
             return File(imageBytes, "image/png");
         }
-        [HttpGet("active/user/{userId:guid}")]
-        public async Task<IActionResult> GetActiveAlbumsByUser(Guid userId)
+        [Authorize]
+        [HttpGet("active")]
+        public async Task<IActionResult> GetActiveAlbumsByUser()
         {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Brak userId w tokenie");
+
+            var userId = Guid.Parse(userIdClaim.Value);
             var response = await _albumService.GetActiveAlbumAsync(userId);
             return response.Success ? Ok(response) : NotFound(response);
         }
-        [HttpGet("ended/user/{userId:guid}")]
-        public async Task<IActionResult> GetEndedAlbumsByUser(Guid userId)
+        [Authorize]
+        [HttpGet("ended")]
+        public async Task<IActionResult> GetEndedAlbumsByUser()
         {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Brak userId w tokenie");
+
+            var userId = Guid.Parse(userIdClaim.Value);
             var response = await _albumService.GetEndedAlbumAsync(userId);
             return response.Success ? Ok(response) : NotFound(response);
         }

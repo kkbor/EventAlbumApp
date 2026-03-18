@@ -7,7 +7,7 @@ namespace EventAlbumApp.Services.Interfaces
 {
     public interface IAlbumService
     {
-        Task<ApiResponse<object>> CreateAlbumAsync(DTOalbum dto, string baseUrl);
+        Task<ApiResponse<object>> CreateAlbumAsync(DTOalbum dto, string baseUrl, Guid userId );
         Task<ApiResponse<object>> GetAlbumByQrAsync(Guid token);
         Task<ApiResponse<IEnumerable<object>>> GetActiveAlbumAsync(Guid userId);
         Task<ApiResponse<IEnumerable<object>>> GetEndedAlbumAsync(Guid userId);

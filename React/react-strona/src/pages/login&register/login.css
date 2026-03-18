@@ -7,8 +7,7 @@
   min-height: 100vh;         
   width: 100%;               
   display: flex;              
-  justify-content: center;    
-  align-items: center;        
+  justify-content: center;      
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,17 +25,23 @@ html, body {
 .block-login {
   background-color: #FFFAEE;
   width: 500px;   
-  height: 649px; 
   border: 2px solid #634161;
   border-radius: 120px;
   display: flex;      
-  flex-direction: column;     /* dzieci w kolumnie */
-  align-items: center;        /* wyśrodkowanie poziome */
+  flex-direction: column;     
+  align-items: center;        
   font-family: 'Italianno';
-  font-size: 96px;           
-  padding: 2rem;               
+  font-size: 48px;           
+  padding: 3rem;               
   box-sizing: border-box;      
-  gap: 20px;                  /* odstęp między dziećmi */
+  gap: 10px;                  
+}
+.block-login h2 {
+  font-size: 64px; 
+  margin-bottom: 1rem;
+}
+.block-login input {
+  margin-bottom: 15px;
 }
 
 

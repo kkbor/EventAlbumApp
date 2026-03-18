@@ -8,6 +8,5 @@ namespace EventAlbumApp.Services.Interfaces
     {
         Task<ApiResponse> RegisterAsync(DTOregister dto);
         Task<ApiResponse<UserResponse>> LoginAsync(DTOLogin dto);
-        Task<Users?> GetUserByEmailAsync(string email);
     }
 }

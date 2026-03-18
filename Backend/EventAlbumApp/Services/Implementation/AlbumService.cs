@@ -17,9 +17,9 @@ namespace EventAlbumApp.Services.Implementations
             _context = context;
         }
 
-        public async Task<ApiResponse<object>> CreateAlbumAsync(DTOalbum dto, string baseUrl)
+        public async Task<ApiResponse<object>> CreateAlbumAsync(DTOalbum dto, string baseUrl, Guid userId)
         {
-            var user = await _context.Users.FindAsync(dto.UserId);
+            var user = await _context.Users.FindAsync(userId);
             if (user == null)
                 return ApiResponse<object>.ErrorResponse("Użytkownik nie zalogowany", "USER_NOT_FOUND");
 
@@ -33,7 +33,7 @@ namespace EventAlbumApp.Services.Implementations
             var album = new Album
             {
                 Id = Guid.NewGuid(),
-                IdUser = dto.UserId,
+                IdUser = userId,
                 IdQr = qr.Id,
                 Name = dto.Name,
                 Start = dto.Start,

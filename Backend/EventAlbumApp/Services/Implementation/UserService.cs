@@ -3,6 +3,7 @@ using EventAlbumApp.Connetion;
 using EventAlbumApp.DTO;
 using EventAlbumApp.DTO.Response;
 using EventAlbumApp.Entities;
+using EventAlbumApp.Services.Interface;
 using EventAlbumApp.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,10 +12,12 @@ namespace EventAlbumApp.Services.Implementations
     public class UserService : IUserService
     {
         private readonly AppdbContext _context;
+        private readonly IJwtService _jwtService; 
 
-        public UserService(AppdbContext context)
+        public UserService(AppdbContext context, IJwtService jwtService)
         {
             _context = context;
+            _jwtService = jwtService;
         }
 
         public async Task<ApiResponse> RegisterAsync(DTOregister dto)
@@ -48,21 +51,18 @@ namespace EventAlbumApp.Services.Implementations
             {
                 return ApiResponse<UserResponse>.ErrorResponse("Nieprawidłowy email lub hasło", "INVALID_CREDENTIALS");
             }
-
+            var token = _jwtService.GenerateToken(user.Id, user.Email);
             var responseDto = new UserResponse
             {
                 Id = user.Id,
                 Name = user.Name,
                 Surname = user.Surname,
-                Email = user.Email
+                Email = user.Email,
+                Token = token
             };
 
             return ApiResponse<UserResponse>.SuccessResponse(responseDto, "Zalogowano pomyślnie");
         }
 
-        public async Task<Users?> GetUserByEmailAsync(string email)
-        {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-        }
     }
 }

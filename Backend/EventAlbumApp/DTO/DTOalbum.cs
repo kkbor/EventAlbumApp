@@ -5,8 +5,7 @@ namespace EventAlbumApp.DTO
 {
     public class DTOalbum
     {
-        [Required]
-        public Guid UserId { get; set; }
+        
 
         [Required]
         public string Name { get; set; } = null!;

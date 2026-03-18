@@ -2,17 +2,11 @@
   {
     "ContainingType": "EventAlbumApp.Controllers.AlbumController",
     "Method": "GetActiveAlbumsByUser",
-    "RelativePath": "api/Album/active/user/{userId}",
+    "RelativePath": "api/Album/active",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -50,17 +44,11 @@
   {
     "ContainingType": "EventAlbumApp.Controllers.AlbumController",
     "Method": "GetEndedAlbumsByUser",
-    "RelativePath": "api/Album/ended/user/{userId}",
+    "RelativePath": "api/Album/ended",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

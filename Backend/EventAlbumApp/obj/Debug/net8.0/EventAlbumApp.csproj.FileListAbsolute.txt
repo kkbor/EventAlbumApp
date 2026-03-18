@@ -27,8 +27,8 @@ C:\Users\kkbor\Desktop\na ślub\evaentapp\EventAlbumApp\EventAlbumApp\obj\Debug\
 C:\Users\kkbor\Desktop\na ślub\evaentapp\EventAlbumApp\EventAlbumApp\obj\Debug\net8.0\EventAlbumApp.genruntimeconfig.cache
 C:\Users\kkbor\Desktop\na ślub\evaentapp\EventAlbumApp\EventAlbumApp\obj\Debug\net8.0\ref\EventAlbumApp.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.staticwebassets.endpoints.json
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\appsettings.json
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.staticwebassets.endpoints.json
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.exe
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.deps.json
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.runtimeconfig.json
@@ -36,7 +36,9 @@ C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\D
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\EventAlbumApp.pdb
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -66,6 +68,10 @@ C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\D
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\QRCoder.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.ImageSharp.Drawing.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
@@ -75,6 +81,8 @@ C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\D
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Private.Windows.Core.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Private.Windows.GdiPlus.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Runtime.Caching.dll
@@ -139,6 +147,7 @@ C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\D
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -158,18 +167,10 @@ C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\D
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\EventAlb.E1756DB2.Up2Date
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\EventAlbumApp.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\refint\EventAlbumApp.dll
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\EventAlbumApp.pdb
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\EventAlbumApp.genruntimeconfig.cache
 C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\ref\EventAlbumApp.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\BCrypt.Net-Next.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\QRCoder.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Private.Windows.Core.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\System.Private.Windows.GdiPlus.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.Fonts.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.ImageSharp.dll
-C:\Users\kkbor\Desktop\Nowy folder (3)\EventAlbumApp\Backend\EventAlbumApp\bin\Debug\net8.0\SixLabors.ImageSharp.Drawing.dll

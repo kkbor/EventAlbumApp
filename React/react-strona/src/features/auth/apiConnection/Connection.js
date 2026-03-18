@@ -1,22 +1,41 @@
+import { useAuth } from "../context/AuthContext";
 const BASE_URL = "https://localhost:7263";
-async function request(endpoint, method = "POST",data) {
-    const options ={
-        method,
-        headers:{
-            "Content-Type": "application/json",
-        }
+
+export function useApi() {
+  const { token } = useAuth();
+
+  async function request(endpoint, method = "GET", data) {
+    console.log("Token wysyłany do backendu:", token);
+
+    const options = {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+        ...(token && { Authorization: `Bearer ${token}` }),
+      },
     };
-    if(data){
-        options.body=JSON.stringify(data);
+
+    if (data && method !== "GET") {
+      options.body = JSON.stringify(data);
     }
+
     const res = await fetch(`${BASE_URL}${endpoint}`, options);
-    if(!res.ok){
-        const error = await res.text();
-        throw new Error(error || "API ERROR");
-        
+    const text = await res.text(); // ✅ tylko raz
+  console.log("RAW RESPONSE", text, res.status);
+
+    const parsed = text ? JSON.parse(text) : null; // ✅ ręczne parsowanie
+
+    if (!res.ok) {
+      throw new Error(parsed?.message || "API ERROR");
     }
-    return res.json();
+
+    return parsed;
+  }
+
+  return {
+    get: (endpoint) => request(endpoint, "GET"),
+    post: (endpoint, data) => request(endpoint, "POST", data),
+    put: (endpoint, data) => request(endpoint, "PUT", data),
+    delete: (endpoint) => request(endpoint, "DELETE"),
+  };
 }
-export const api = {
-    post:(edpoint, data) => request(edpoint,"POST", data),
-};

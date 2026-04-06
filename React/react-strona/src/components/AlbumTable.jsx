@@ -1,6 +1,8 @@
-import "../pages/home_page.css"
+import { useNavigate } from "react-router-dom";
+import "../pages/home_page/home_page.css"
 import { formatDate } from "../utils/dateUtils"; 
-export function AlbumTable({title, albums}) {
+export function AlbumTable({title, albums, onShowQr, onEndEvent}) {
+  const navigate = useNavigate();
   return (
     <div className="block-hp">
       
@@ -13,6 +15,7 @@ export function AlbumTable({title, albums}) {
        
           <tbody>
             {albums.map((album) => (
+              
               <tr key={album.id}>
                 <td>{album.name}</td>
                 <td>{formatDate(album.start)}</td>
@@ -23,18 +26,18 @@ export function AlbumTable({title, albums}) {
                   </button>
                 )}</td>
                 <td>{title === "Archiwum" && (
-                  <button className="btn-hp">
+                  <button className="btn-hp" onClick={() => onShowQr(album.qrToken)}>
                     Udostępnij
                   </button>
                 )}</td>
                 <td>{title === "Albumy" && (
-                  <button className="btn-hp">
+                  <button className="btn-hp" onClick={() => onEndEvent(album.id)}>
                     Zakończ
                   </button>
                 )}</td>
                 <td>{title === "Albumy" && (
-                  <button className="btn-hp">
-                    Kod QR
+                  <button className="btn-hp" onClick={() => onShowQr(album.qrToken)}>
+                      Kod QR
                   </button>
                 )}</td>
               </tr>
@@ -43,7 +46,7 @@ export function AlbumTable({title, albums}) {
         </table>
       )}
       {title === "Albumy" && (
-        <button className="btncircle"><span>+</span></button>
+        <button className="btncircle" onClick={() => navigate("/create")}><span>+</span></button>
       )}
 
     </div>

@@ -63,6 +63,34 @@ namespace EventAlbumApp.Services.Implementations
 
             return ApiResponse<UserResponse>.SuccessResponse(responseDto, "Zalogowano pomyślnie");
         }
+        public async Task<ApiResponse<DTOUser>> UserInfo(Guid id)
+        {
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+            var listOfPhotos = await _context.Photos
+                .Where(p => _context.Albums
+                    .Where(a => a.IdUser == id)
+                    .Select(a => a.Id)
+                    .Contains(p.IdAlbum))
+                .Select(p => new DTOPhotos
+                {
+                    Id = p.Id,
+                    IdAlbum = p.IdAlbum,
+                    Name = p.Name,
+                    Data = p.Data,
+                    CreatedAt = p.CreatedAt
+                })
+                .ToListAsync();
+
+            var response = new DTOUser
+            {
+                Name = user.Name,
+                Surname = user.Surname,
+                Email = user.Email,
+                photos = listOfPhotos,
+            };
+            return ApiResponse<DTOUser>.SuccessResponse(response);
+        }
 
     }
 }

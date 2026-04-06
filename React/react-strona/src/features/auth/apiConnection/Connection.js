@@ -4,7 +4,7 @@ const BASE_URL = "https://localhost:7263";
 export function useApi() {
   const { token } = useAuth();
 
-  async function request(endpoint, method = "GET", data) {
+  async function request(endpoint, method = "GET", data, responseType = "json") {
     console.log("Token wysyłany do backendu:", token);
 
     const options = {
@@ -20,21 +20,28 @@ export function useApi() {
     }
 
     const res = await fetch(`${BASE_URL}${endpoint}`, options);
-    const text = await res.text(); // ✅ tylko raz
-  console.log("RAW RESPONSE", text, res.status);
+    let result;
 
-    const parsed = text ? JSON.parse(text) : null; // ✅ ręczne parsowanie
-
-    if (!res.ok) {
-      throw new Error(parsed?.message || "API ERROR");
+    if (responseType === "blob") {
+      result = await res.blob(); 
+    } else {
+      const text = await res.text();
+      console.log("RAW RESPONSE", text, res.status);
+      result = text ? JSON.parse(text) : null;
     }
 
-    return parsed;
+    if (!res.ok) {
+      throw new Error(result?.message || "API ERROR");
+    }
+
+    return result;
   }
 
   return {
     get: (endpoint) => request(endpoint, "GET"),
+    getBlob: (endpoint) => request(endpoint, "GET", null, "blob"),
     post: (endpoint, data) => request(endpoint, "POST", data),
+    patch: (endpoint) => request(endpoint, "PATCH"),
     put: (endpoint, data) => request(endpoint, "PUT", data),
     delete: (endpoint) => request(endpoint, "DELETE"),
   };

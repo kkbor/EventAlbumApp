@@ -1,36 +1,40 @@
-import React, { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
+import AuthUtils from "../../../utils/authUtils";
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  // Inicjalizacja stanu z localStorage, jeśli istnieje token
-  const [token, setToken] = useState(() => localStorage.getItem("TOKEN_KEY"));
+  const [user, setUser] = useState(null);  
+  const [loading, setLoading] = useState(true);
 
-  // Zapis tokena do stanu i localStorage
-  const saveToken = (newToken) => {
-    localStorage.setItem("TOKEN_KEY", newToken);
-    setToken(newToken);
+  useEffect(() => {
+    const storedUser = AuthUtils.getUser();
+    if (storedUser) {
+      setUser(storedUser);
+    }
+    setLoading(false);
+  }, []);
+
+  const login = (userData) => {
+    AuthUtils.setUser(userData);
+    setUser(userData);
   };
 
-  // Usunięcie tokena
-  const removeToken = () => {
-    localStorage.removeItem("TOKEN_KEY");
-    setToken(null);
+  const logout = () => {
+    AuthUtils.removeUser();
+    setUser(null);
   };
 
+  const token = user?.token || null;
   const isLoggedIn = !!token;
 
   return (
-    <AuthContext.Provider value={{ token, saveToken, removeToken, isLoggedIn }}>
+    <AuthContext.Provider value={{ user, token, login, logout, isLoggedIn, loading }}>
       {children}
     </AuthContext.Provider>
   );
 }
 
 export function useAuth() {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth musi być użyty wewnątrz AuthProvider");
-  }
-  return context;
+  return useContext(AuthContext);
 }

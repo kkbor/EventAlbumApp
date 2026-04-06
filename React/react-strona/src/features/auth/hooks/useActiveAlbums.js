@@ -9,23 +9,23 @@ export function useAlbums() {
     
     useEffect(() => {
         async function fetchAlbums() {
-        
-        setLoading(true);
-        setError("");
-        try {
+            
+            setLoading(true);
+            setError("");
+            try {
 
-            const activeResponse = await api.get("/api/album/active");
-            const endedResponse = await api.get("/api/album/ended");
+                const activeResponse = await api.get("/api/album/active");
+                const endedResponse = await api.get("/api/album/ended");
 
-            setActiveAlbums(activeResponse.data || []); 
-            setEndedAlbums(endedResponse.data || []);
-        } catch (err) {
-            console.error(err);
-            setError(err.message || "Błąd pobierania albumów");
-        } finally {
-            setLoading(false);
+                setActiveAlbums(activeResponse.data || []); 
+                setEndedAlbums(endedResponse.data || []);
+            } catch (err) {
+                console.error(err);
+                setError(err.message || "Błąd pobierania albumów");
+            } finally {
+                setLoading(false);
+            }
         }
-    }
 
     fetchAlbums();
   }, []);

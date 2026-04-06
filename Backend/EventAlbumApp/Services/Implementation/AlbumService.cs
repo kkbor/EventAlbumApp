@@ -5,6 +5,7 @@ using EventAlbumApp.Entities;
 using EventAlbumApp.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using QRCoder;
+using static QRCoder.PayloadGenerator;
 
 namespace EventAlbumApp.Services.Implementations
 {
@@ -57,6 +58,16 @@ namespace EventAlbumApp.Services.Implementations
                 QrRedirectUrl = qrUrl
             }, "Album utworzony pomyślnie");
         }
+        public async Task<ApiResponse> EndAlbumEvent(Guid albumId)
+        {
+            var album = await _context.Albums.FirstOrDefaultAsync(a => a.Id == albumId);
+            if (album == null)
+                return ApiResponse.ErrorResponse("Nie odnaleziono albumu","ALBUM_DOES_NOT_EXIST");
+            album.End = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+            return ApiResponse.SuccessResponse("Wydarzenie zostało zakończone.");
+
+        }
 
         public async Task<ApiResponse<object>> GetAlbumByQrAsync(Guid token)
         {
@@ -79,9 +90,9 @@ namespace EventAlbumApp.Services.Implementations
         }
 
 
-        public byte[] GenerateQrImageBytes(Guid token, string baseUrl)
+        public byte[] GenerateQrImageBytes(Guid token, string frontendBaseUrl)
         {
-            var url = $"{baseUrl}/api/album/by-qr/{token}";
+            var url = $"{frontendBaseUrl}/api/album/by-qr/{token}";
 
             using var qrGenerator = new QRCodeGenerator();
             using var qrData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
@@ -91,6 +102,7 @@ namespace EventAlbumApp.Services.Implementations
 
             return qrBytes;
         }
+        
 
         public async Task<ApiResponse<IEnumerable<object>>> GetActiveAlbumAsync(Guid userId)
         {
@@ -106,6 +118,7 @@ namespace EventAlbumApp.Services.Implementations
                     a.Name,
                     a.Start,
                     a.End,
+                    QrToken = a.Qr.Token
                 })
                 .ToListAsync();
 

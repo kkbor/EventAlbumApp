@@ -1,6 +1,9 @@
-﻿using EventAlbumApp.DTO;
+﻿using Azure;
+using EventAlbumApp.DTO;
 using EventAlbumApp.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace EventAlbumApp.Controllers
 {
@@ -29,6 +32,18 @@ namespace EventAlbumApp.Controllers
             var response = await _userService.LoginAsync(dto);
 
             return response.Success ? Ok(response) : Unauthorized(response);
+        }
+        [Authorize]
+        [HttpGet("user")]
+        public async Task<IActionResult> UserInfo()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+                return Unauthorized("Brak userId w tokenie");
+
+            var userId = Guid.Parse(userIdClaim.Value);
+            var response = await _userService.UserInfo(userId);
+            return response.Success ? Ok(response) : NotFound(response);
         }
     }
 }

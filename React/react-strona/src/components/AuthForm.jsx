@@ -15,7 +15,7 @@ export function AuthForm({mode, formData, onChange, onSubmit, loading, error}) {
 
         <input className="data"  name="email" type="email" placeholder="Email" value={formData.email} onChange={onChange}/>
 
-        <input className="data"name="password" type="password" placeholder="Hasło" value={formData.password} onChange={onChange}/>
+        <input className="data" name="password" type="password" placeholder="Hasło" value={formData.password} onChange={onChange}/>
 
         <button disabled={loading} className="btn-login">{loading ? "Ładowanie..." : mode === "login" 
             ? "Zaloguj się" : "Zarejestruj się"}

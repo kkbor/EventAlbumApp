@@ -56,11 +56,13 @@ namespace EventAlbumApp.Controllers
         [HttpGet("qr-image/{token:guid}")]
         public IActionResult GetQrImage(Guid token)
         {
-            var baseUrl = $"{Request.Scheme}://{Request.Host}";
-            var imageBytes = _albumService.GenerateQrImageBytes(token, baseUrl);
+            var frontendBaseUrl = "http://localhost:5173";
+            var imageBytes = _albumService.GenerateQrImageBytes(token, frontendBaseUrl);
        
             return File(imageBytes, "image/png");
         }
+      
+
         [Authorize]
         [HttpGet("active")]
         public async Task<IActionResult> GetActiveAlbumsByUser()
@@ -87,5 +89,14 @@ namespace EventAlbumApp.Controllers
             var response = await _albumService.GetEndedAlbumAsync(userId);
             return response.Success ? Ok(response) : NotFound(response);
         }
+        [Authorize]
+        [HttpPatch("endEvent/{albumId}")]
+        public async Task<IActionResult> EndAlbumEvent(Guid albumId)
+        {
+            var response = await _albumService.EndAlbumEvent(albumId);
+            return response.Success ? Ok(response) : NotFound(response);
+
+        }
+      
     }
 }

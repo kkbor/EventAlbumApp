@@ -15,8 +15,9 @@ namespace EventAlbumApp.Entities
         [Column("name")]
         [MaxLength(255)]
         public string? Name { get; set; }
-        [Column("datas")]
-        public byte[]? Data { get; set; }
+        [Column("path")]
+        public string? Path { get; set; }
+
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 

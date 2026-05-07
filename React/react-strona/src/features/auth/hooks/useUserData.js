@@ -1,24 +1,22 @@
 import { useState, useEffect } from "react";
 import { useApi } from '../apiConnection/Connection';
-export function useAlbums() {
+
+export function useUserData() {
     const api = useApi();
-    const [activeAlbums, setActiveAlbums] = useState([]);
-    const [endedAlbums, setEndedAlbums] = useState([]);
+    const [userData, setUserData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     
     useEffect(() => {
-        async function fetchAlbums() {
+        async function fetchUserData() {
             
             setLoading(true);
             setError("");
             try {
 
-                const activeResponse = await api.get("/api/album/active");
-                const endedResponse = await api.get("/api/album/ended");
+                const response = await api.get("/api/User/user");
 
-                setActiveAlbums(activeResponse.data || []); 
-                setEndedAlbums(endedResponse.data || []);
+                setUserData(response.data);
             } catch (err) {
                 console.error(err);
                 setError(err.message || "Błąd pobierania albumów");
@@ -27,8 +25,8 @@ export function useAlbums() {
             }
         }
 
-    fetchAlbums();
+    fetchUserData();
   }, []);
 
-  return { activeAlbums, endedAlbums, loading, error };
-}
+  return { userData, loading, error };
+}//14:13

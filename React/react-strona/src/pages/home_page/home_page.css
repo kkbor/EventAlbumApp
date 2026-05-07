@@ -11,7 +11,7 @@ html, body {
 
 .home-page-hp {
   background-image: url("../src/assets/grapes-1659118_1920.jpg");
-  background-size: auto;      
+  background-size: cover;      
   background-position: center ; 
   background-repeat: no-repeat;
   min-height: 100vh;          
@@ -250,4 +250,48 @@ html, body {
   align-items: center;     
   justify-content: center;
   border-radius: 10px;
+}
+.add-photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* PRZYCISK DODAWANIA */
+.btn-add-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+
+  width: 300px;
+  height: 300px;
+
+  background-color: #C6CC70;
+
+  border: 3px dashed #634161; /* przerywana linia */
+  border-radius: 20px;
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: #634161;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.btn-add-photo:hover {
+  transform: scale(1.05);
+  background-color: #d8de85;
+}
+
+/* plus */
+.btn-add-photo span {
+  display: inline-block;
+  transform: translateY(50px) scale(1.2);
+}
+.btn-add-photo span1 {
+  display: inline-block;
+  transform: translateY(50px)scale(0.4);
 }

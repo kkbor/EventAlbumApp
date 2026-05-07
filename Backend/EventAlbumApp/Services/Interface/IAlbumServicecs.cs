@@ -13,5 +13,6 @@ namespace EventAlbumApp.Services.Interfaces
         Task<ApiResponse<IEnumerable<object>>> GetEndedAlbumAsync(Guid userId);
         Task<ApiResponse> EndAlbumEvent(Guid albumId);
         byte[] GenerateQrImageBytes(Guid token, string baseUrl);
+        Task<ApiResponse<IEnumerable<object>>> GetNamesAll(Guid userId);
     }
 }

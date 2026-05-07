@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useCreateAlbum } from "../../features/auth/hooks/useCreateAlbum";
 import './home_page.css'
-import { AlbumForm } from "../../components/AlbumForm";
+import { PhotoForm } from "../../../components/PhotoForm";
 
-function CreateAlbum(){
+function AddPhotos(){
     const [formData,setformData] = useState({
         name: "",
         startDate: "",
@@ -28,7 +28,7 @@ function CreateAlbum(){
                 👤
                 </button>
             </div>
-                <AlbumForm
+                <PhotoForm
                     formData={formData}
                     onChange={handleChange}
                     onSubmit={handleSubmit}
@@ -40,4 +40,4 @@ function CreateAlbum(){
     )
     
 }
-export default CreateAlbum;
+export default AddPhotos;

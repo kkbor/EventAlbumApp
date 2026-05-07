@@ -5,9 +5,11 @@ import { useQR } from '../../features/auth/hooks/useQR.js';
 import { useState } from 'react';
 import UrlService from '../../features/auth/services/urlService.js';
 import { useEndEvent } from '../../features/auth/hooks/useEndEvent.js';
+import { useNavigate } from 'react-router-dom';
 
 
 function Home_page(){
+  const navigate = useNavigate();
   const { activeAlbums, endedAlbums, loading, error } = useAlbums();
   const {qr,qrCode, loadingqr, errorqr} = useQR();
   const [qrVisible, setQrVisible] = useState(false);
@@ -27,7 +29,7 @@ function Home_page(){
     <div className='home-page-hp'>
       <div className='bar-home-hp'>
         Witaj użytkowniku
-        <button className="btncircleUser">
+        <button className="btncircleUser" onClick={() => navigate("/User")}>
           👤
         </button>
       </div>
@@ -38,6 +40,15 @@ function Home_page(){
       {endError && <p className="error">{endError}</p>}
       <AlbumTable title="Albumy" albums={activeAlbums} onShowQr={showQr} onEndEvent={endEvent} />
       <AlbumTable title="Archiwum" albums={endedAlbums} onShowQr={showQrUrl}/>
+      <div className="add-photo-wrapper">
+        <button
+          className="btn-add-photo"
+          onClick={() => navigate("/add-photo")}
+        >
+          <span>+</span>
+          <span1>Dodaj zdjęcia</span1>
+        </button>
+      </div>
       {loadingqr && <p>Ładowanie QR...</p>}
       {errorqr && <p className="error">{errorqr}</p>}
       

@@ -97,6 +97,18 @@ namespace EventAlbumApp.Controllers
             return response.Success ? Ok(response) : NotFound(response);
 
         }
-      
+        [Authorize]
+        [HttpGet("names")]
+        public async Task<IActionResult> NamesAllAlbums()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Brak userId w tokenie");
+
+            var userId = Guid.Parse(userIdClaim.Value);
+            var response = await _albumService.GetNamesAll(userId);
+            return response.Success ? Ok(response) : NotFound(response);
+        }      
     }
 }

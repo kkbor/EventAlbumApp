@@ -5,8 +5,8 @@ function Layout() {
     <>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        <Link to="/Login">Login</Link>
+        <Link to="/Register">Register</Link>
       </nav>
 
       <main>

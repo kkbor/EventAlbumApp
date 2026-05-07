@@ -1,0 +1,65 @@
+/* kontener dzielący blok */
+.user-content {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+/* LEWA CZĘŚĆ */
+.user-data {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* środek pionowo */
+  align-items: center;       /* środek poziomo */
+
+  padding-right: 30px;
+  border-right: 2px solid #634161;
+}
+.btn-us {
+  width: 220px;     
+  height: 50px; 
+  background-color: #3D1D3A; 
+  color: white;
+  border: 2px solid #3D1D3A;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;  
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn1-us {
+    width: 220px;    
+  height: 50px; 
+  background-color: transparent; 
+  color: Black;
+   border: 2px solid #3D1D3A;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;  
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+/* PRAWA CZĘŚĆ */
+.user-photos {
+  flex: 1;
+  padding-left: 30px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  min-height: 300px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.photo-item {
+  width: 100%;
+  height: 200px;       /* dowolna wysokość */
+  object-fit: cover;   /* przycina zamiast rozciągać */
+  border-radius: 10px;
+}

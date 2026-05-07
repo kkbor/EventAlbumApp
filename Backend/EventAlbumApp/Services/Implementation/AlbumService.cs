@@ -111,7 +111,7 @@ namespace EventAlbumApp.Services.Implementations
                 return ApiResponse<IEnumerable<object>>.ErrorResponse("Nieprawidłowy email lub hasło", "USER_NOT_FOUND");
             var now = DateTime.UtcNow;
             var activeAlbums = await _context.Albums
-                .Where(a => a.IdUser == userId && a.End > now)
+                .Where(a => a.IdUser == userId && a.End > now && a.Name != "%%%")
                 .Select(a => new
                 {   
                     a.Id,
@@ -121,7 +121,6 @@ namespace EventAlbumApp.Services.Implementations
                     QrToken = a.Qr.Token
                 })
                 .ToListAsync();
-
             return ApiResponse<IEnumerable<object>>.SuccessResponse(activeAlbums, "Lista aktywnych albumów użytkownika");
         }
 
@@ -132,7 +131,7 @@ namespace EventAlbumApp.Services.Implementations
                 return ApiResponse<IEnumerable<object>>.ErrorResponse("Nieprawidłowy email lub hasło", "USER_NOT_FOUND");
             var now = DateTime.UtcNow;
             var activeAlbums = await _context.Albums
-                .Where(a => a.IdUser == userId && a.End <= now)
+                .Where(a => a.IdUser == userId && a.End <= now && a.Name != "%%%")
                 .Select(a => new
                 {
                     a.Id,
@@ -143,6 +142,19 @@ namespace EventAlbumApp.Services.Implementations
                 .ToListAsync();
 
             return ApiResponse<IEnumerable<object>>.SuccessResponse(activeAlbums, "Lista aktywnych albumów użytkownika");
+        }
+
+        public async Task<ApiResponse<IEnumerable<object>>> GetNamesAll(Guid userId)
+        {
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+                return ApiResponse<IEnumerable<object>>.ErrorResponse("Nieprawidłowy email lub hasło", "USER_NOT_FOUND");
+            var namesAlbums = await _context.Albums.Where(a => a.IdUser == userId).Select(a => new
+            {
+                a.Id,
+                a.Name,
+            }).ToListAsync();
+            return ApiResponse<IEnumerable<object>>.SuccessResponse(namesAlbums, "Lista albumów użytkownika");
         }
     }
 }
